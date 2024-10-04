@@ -9,7 +9,7 @@ from langchain_aws import ChatBedrock
 
 def hr_index():
     #Define the data source and load with PDF Loader
-    data_load = PyPDFLoader("https://www.upl-ltd.com/images/people/downloads/Leave-Policy-India.pdf")
+    data_load = PyPDFLoader("/Users/mateo_zapata/Downloads/Company Description.pdf")
     #split the text based on character, tokens etc.
     data_split=RecursiveCharacterTextSplitter(separators=["\n\n", "\n", " ", ""], chunk_size=100, chunk_overlap=10)
     #Embedding document

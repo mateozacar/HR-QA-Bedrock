@@ -12,7 +12,7 @@ if 'vector_index' not in st.session_state:
         st.session_state.vector_index = demo.hr_index() ### Your Index Function name from Backend File
 
 input_text = st.text_area("Input text", label_visibility="collapsed") 
-go_button = st.button("📌Learn GenAI with Rahul Trisal", type="primary") ### Button Name
+go_button = st.button("📌Learn GenAI", type="primary") ### Button Name
 
 if go_button: 
     
